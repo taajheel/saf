@@ -279,10 +279,25 @@
               ">
 
 <div class="brand__wrapper" skip-data-sb="">
-  <img alt="Quran" class="logo" src="quranheader.jpg">
-  <span class="brand__text" data-component-field="brand" data-sb-field="text" data-sb-is-link="" data-sb-type="text" data-sb-uuid="c2c9dc12-980c-40f1-9548-df027ed5225e">TH</span>
+  <img alt="Quran" class="logo responsive" src="quranheader.jpg">
+  <span class="brand__text" data-component-field="brand" data-sb-field="text" data-sb-is-link="" data-sb-type="text" data-sb-uuid="c2c9dc12-980c-40f1-9548-df027ed5225e"> </span>
 </div>
-    
+
+<style>
+  .brand__wrapper {
+    text-align: left; /* Aligns content to the left */
+  }
+  .logo {
+    display: block; /* Ensures the image behaves as a block element */
+    max-width: 100%; /* Prevents the image from exceeding the container's width */
+    height: auto; /* Maintains the image's aspect ratio */
+  }
+  .responsive {
+    width: 100%; /* Allows the image to scale with the screen size */
+  }
+</style>
+
+   
   </a>
   
     <button aria-label="Show navigation" class="sb-mobile-nav-btn" id="sb-mobile-nav-btn" type="button">
